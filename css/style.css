@@ -1,3 +1,9 @@
+@font-face {
+        font-family: ComicSansMSRegular;
+        src: url(../font/ComicSansMSRegular.ttf);
+}
+
+
 a:link { text-decoration: underline; }
 a:active { text-decoration: none; }
 a:visited { text-decoration: none; }
@@ -24,6 +30,11 @@ input{
     font-family: sans-serif;
 }
 
+ font{
+    margin: 0px;
+    padding: 0px;
+
+}
 .btn{
   font-size: 24px;
 }
@@ -40,22 +51,90 @@ input{
 
 #info{
   position: absolute;
-  top: 10%;
   margin: 0 auto;
-  left: 20%;
+  left: 18%;
+  z-index: 20;
 
+}
+
+.img0{
+    position: absolute;
+    z-index: 1000;
+    right: 5%;
+    top: 90%;
+    -ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    transform: rotate(30deg);
+ 
+}
+
+.img1{
+    position: absolute;
+    z-index: 1000;
+    left: 80%;
+    top: 10%;
+    -ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    transform: rotate(30deg);
+    width: 100px;
+    height: 95px;
+}
+
+.img2{
+    position: absolute;
+    z-index: 1000;
+    left: 5%;
+    top: 0%;
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+    transform: rotate(-20deg);
+    width: 720px;
+    height: 457px;
+}
+
+.img3{
+    position: absolute;
+    z-index: 1000;
+    left: 0%;
+    top: 24%;
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+    transform: rotate(-20deg);
+}
+.img4{
+    position: absolute;
+    z-index: 10;
+    right: 0%;
+    top: 20%;
+    -ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+    transform: rotate(10deg);
+}
+
+.img5{
+    position: absolute;
+    z-index: 10;
+    left: 0%;
+    top: 90%;
+    -ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+    transform: rotate(-10deg);
+    width:312px;
+    height: 390px;
 }
 
  h1 {
     text-align: center;
     font-size: 60px;
     display: block;
-    width: 700px;
+    width: 600px;
     position: relative;
     margin: 0 auto;
     padding: 0,auto;
+    
     font-family: 'Lobster', cursive;
     font-family: 'Permanent Marker', cursive;
+    font-family:ComicSansMSRegular;
     line-height: 80px;
     margin-bottom: 30px;
     color: #000;
@@ -63,10 +142,19 @@ input{
 }
 
 p{
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   font-family: 'Titillium Web', sans-serif;
-
+  font-family:ComicSansMSRegular;
+  display: block;
+  width: 500px;
+  color: #faf6ad;
+  padding-left: 20%;
+}
+.underline{
+    display: inline;
+    text-decoration:underline;
+    color: #ff0000;
 }
 
 #map{
@@ -104,6 +192,6 @@ body
     font-size: 9pt;
     color: #050505;    
     margin:0px auto;
-    background: #fff;
+    background: #540fd8;
     text-align: center;
 }

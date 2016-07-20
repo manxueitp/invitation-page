@@ -40,22 +40,24 @@ var btnYes = function(mass,x,y) {
       ellipse(0, 0, sYes+random(randomV), sYes+random(randomV));
       //words
       textSize(yesTSize);
+      textFont("ComicSansMSRegular");
       fill(0,0,0,255-yesA);
       text("Yes", -30+random(-2,2), 10);
       fill(3,199,255,yesA);
-      textFont("Helvetica");
+      textFont("ComicSansMSRegular");
       text("Yes", -30+random(-randomV+3,randomV-3), 10); 
       fill(r,g,b);
       fill(a,a,a);
-      textFont("Helvetica");
+      //textFont("");
+      textFont("ComicSansMSRegular");
       text("Yes", -30, 10);
       pop();
    //yes button end  
    };
 
    this.expend=function(){
-      yesCX=width*0.3;
-      yesCY=height*0.5;
+      yesCX=width*0.16;
+      yesCY=height*0.7;
       dYes = dist(mouseX, mouseY, yesCX, yesCY);
     
       if (dYes < 200){

@@ -14,7 +14,8 @@ var Mover = function(mass,x,y,rate,n) {
     this.mass = mass;
     this.rate=rate;
     this.n=n;
-    this.lifespan = 255.0;
+    this.lifespan = round(random(200,255));
+    this.increment=0;
    
    this.display = function() {
       push();
@@ -29,12 +30,23 @@ var Mover = function(mass,x,y,rate,n) {
 
    this.update=function(){
 
-   	this.lifespan-=3;
+   	//this.lifespan-=3;
    	
-   	if (this.lifespan < 0.0) {
-   	  this.lifespan=0
-      this.lifespan+=255; 
+   	if (this.lifespan <= 0) {
+   	 this.increment=1;
     } 
+
+    if(this.lifespan >=255){
+     this.increment=0; 
+    }
+    
+    if(this.increment==0){
+       this.lifespan-=10;
+    }
+
+    if(this.increment==1){
+      this.lifespan+=10;
+    }
       
     
    }

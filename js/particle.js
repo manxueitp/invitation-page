@@ -26,15 +26,15 @@ var Particle = function(position) {
   this.update = function(){
     this.velocity.add(this.acceleration);
     this.position.add(this.velocity);
-    this.lifespan -= 2;
+    this.lifespan -= 1;
   };
 
   // Method to display
   this.display = function() {
     //stroke(255, this.lifespan);
     strokeWeight(2);
-    fill(100, this.lifespan)
-    ellipse(this.position.x, this.position.y, 12, 12);
+    fill(78,244,15, this.lifespan)
+    ellipse(this.position.x, this.position.y, 10, 10);
   };
 
 
