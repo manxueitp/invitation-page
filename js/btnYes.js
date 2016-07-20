@@ -35,7 +35,7 @@ var btnYes = function(mass,x,y) {
       translate(this.position.x, this.position.y);
   //yes button
       fill(252, 225, 42, 255);
-      ellipse(0, 0, 5+sYes+random(randomV+10), 5+sYes+random(randomV+10));
+      ellipse(0, 0, 5+sYes+random(randomV+16), 5+sYes+random(randomV+16));
       fill(0, 0, 0, a);
       ellipse(0, 0, sYes+random(randomV), sYes+random(randomV));
       //words

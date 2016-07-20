@@ -52,14 +52,14 @@ function setup() {
 
   background(255);
 
-  sYes=160;
+  sYes=200;
   sNo=160;
 
   for (var i = 0; i <= 20; i++) {
   	var positionx= random(1,10)/10;
   	var positiony= random(4,10)/10;
   	var rrate=random(10,100);
-  	var rmass=random(10,20);
+  	var rmass=random(10,24);
     var rn=round(random(0,4));
   	var seed=random(0,1);
 
